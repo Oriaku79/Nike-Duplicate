@@ -1,0 +1,62 @@
+@media (max-width: 72rem) {
+    /* 1152 */
+    html{
+        font-size: 56.25%;
+    }
+}
+
+@media (max-width: 67rem) {
+    /* 1072 */
+    html{
+        font-size: 50%;
+    }
+    .search-flex{
+        background-color: var(--white);
+        display: flex;
+        justify-content: end;
+    }
+    .search{
+        display: none;
+    }
+    .search-icon{
+        display: flex;
+    }
+}
+
+@media (max-width: 50rem) {
+    /* 800 */
+    html{
+        font-size: 43.75%;
+    }
+    .hero-section{
+        height: auto;
+        margin-bottom: 10rem;
+    }
+}
+
+@media (max-width: 45rem) {
+    /* 720 */
+    .new-featured{
+        display: none;
+        padding: 0;
+    }
+}
+@media (max-width: 33rem) {
+    /* 528 */
+    h1{
+        font-size: 5rem;
+    }
+    .features-section{
+        margin-bottom: 15rem;
+    }
+    .cta-section{
+        margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 21rem) {
+    /* 336 */
+    .search-flex{
+        width: 0;
+    }
+}

@@ -1,0 +1,296 @@
+/* 
+-------------TYPOGRAPHY------------
+-----FONT FAMILY---
+Montserrat, Oaswald
+
+-----FONT SIZES---
+
+-----FONT WEIGHT---
+
+-----LINE HEIGHT---
+
+-----LETTER SPACING---
+
+
+-----------COLORS----------
+----GREY---
+Base: 
+Tint:
+Shade: 
+White: 
+Black: 
+
+
+----------SPACING SYSTEM--------
+
+
+-----------BORDER RADIUS--------
+
+*/
+
+/* --------------------GLOBAL STYLES-------------------- */
+
+:root {
+    /* FONT SIZE */
+    --text-xsm: 1.3rem;
+    --text-base: 1.6rem;
+    --text-paragraph: 2rem;
+    --text-h2: 3rem;
+    --text-h1-querie: 5rem;
+    --text-h1: 6.2rem;
+
+    /* FONT WEIGHT */
+    --font-weight-light: 500;
+    --font-weight-md: 600;
+    --font-weight-bold: 800;
+
+    /* LINE HEIGHT */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+
+    /* LETTER SPACING */
+    --letter-spacing-tight: -2px;
+
+    /* FONT FAMILY */
+    --font-family-montserrat: 'Montserrat', sans-serif ;
+    --font-family-oswald: 'Oswald', sans-serif;
+
+    /* COLORS */
+    --grey-base: #495057;
+    --grey-tint: #f1f3f5;
+    --grey-shade: #212529;
+    --white: #ffffff;
+    --black: #000000;
+
+    /* MISCELLANEOUS */
+    --nav-height: 100px;
+     
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-family-montserrat);
+    color: var(--black);
+    line-height: var(--line-height-normal);
+}
+
+.main-container {
+    max-width: 2500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; 
+}
+
+h1, h2 { 
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
+}
+
+h2, p, .new-features, .help-bar {
+    font-weight: var(--font-weight-md);
+}
+
+h1 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-h1);
+}
+
+h2 {
+    font-size: var(--text-h2);
+}
+
+p {
+    font-size: var(--text-paragraph);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.help-bar, .small-text {
+    font-size: var(--text-xsm);
+}
+
+.new-featured {
+    font-size: var(--text-base);
+}
+
+.small-text{
+    font-weight: var(--font-weight-light);
+}
+
+.new-featured, .help-bar{
+    font-weight: var(--font-weight-md);
+}
+
+.logo {
+    width: 80px;
+}
+
+.sm-icons {
+    width: 25px;
+}
+
+.footer, .search {
+    font-size: var(--text-base);
+}
+.search {
+    border: 2rem;
+}
+
+.black-link {
+    color: var(--black);
+}
+
+.gray-links {
+    color: var(--grey-base);
+}
+
+.md-img, .big-img, .spotlight, .its-better-img, .cta-image {
+    max-width: 100%;
+    height: auto; 
+}
+
+
+
+/* ---------------NAV BAR------------ */
+.nav-bar{
+    height: var(--nav-height);
+    margin-bottom: 100px;
+}
+
+
+/* ----Help bar---- */
+.help-bar {
+    color: var(--black);
+    height: 3rem;
+    background-color: var(--grey-tint);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+} 
+
+
+/* -----New featured---- */
+.logo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.new-featured {
+    display: flex;
+    gap: 2rem;
+    padding-left: 18rem;
+}
+
+.icon-flex {
+    display: flex;  
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.search-icon {
+    display: flex;
+    border-radius: 50%;
+    width: 3.8rem;
+    height: auto;
+}
+.search-flex {
+    background: var(--grey-tint);
+    width: 18rem;
+    height: 3.8rem;
+    display: flex;
+    border-radius: 7.5rem;
+    gap: 1rem;
+    align-items: center;
+} 
+
+/* ----Small text---- */
+.small-text{
+    height: 3rem;
+    text-align: center; 
+    background-color: var(--grey-tint);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-small-text {
+    text-decoration: underline;
+}
+
+
+
+/* ---------------HERO SECTION----------- */
+.hero-section {
+    height: calc(100vh - var(--nav-height));
+}
+
+.main-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main-img {
+    width: 100%;
+    height: 60rem;
+}
+
+/* ---------------FEATURED SECTION------------ */
+.features-section{
+    margin-bottom: 20rem;
+    margin-top: 10rem;
+}
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    margin-bottom: 10rem;
+    
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    overflow: auto;
+}
+
+/* --------------CTA SECTION-------------- */
+
+.cta-section {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.spotlight {
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+.sm-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
