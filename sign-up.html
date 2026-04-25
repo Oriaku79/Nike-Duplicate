@@ -1,1 +1,54 @@
-<h1>SIGN UP</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="queries.css">
+</head>
+<body>
+    <div class="sign-up-container">
+        <div class="imm-container">
+            <form class="sign-up-form" action="nikeduplicate-server" method="post">
+                <h1 class="sign-up-h1">Create your Nike account</h1>
+                <a class="btn google-button" href="https://google.com/signin">Sign up with Google</a>
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+                <!-- <p class="or-text">OR</p> -->
+
+                <label class="sign-up-label" for="email">Email</label>
+                <input class="content-border" id="email" type="email" name="email" required>
+
+                <label class="sign-up-label for="full-name">Full name</label>
+                <input class="content-border" id="full-name" type="text" name="full-name" required>
+
+                <label class="sign-up-label for="password">Password</label>
+                <input class="content-border" id="password" type="password" name="password" required>
+            
+                <label class="sign-up-label for="country">Country</label>
+                <select class="content-border" name="country" id="country">
+                    <option value="nigeria">Nigeria</option>
+                    <option value="canada">Canada</option>
+                    <option value="united-kingdom">United Kingdom</option>
+                    <option value="netherland">Netherland</option>
+                    <option value="qatar">Qatar</option>
+                </select>
+                
+                <div class="checkbox-flex">
+                    <input id="checkbox" type="checkbox" name="email-permission">
+                    <label class="checkbox-txt" for="checkbox">Get emails from Nike about product updates, and events. You can unsubscribe at anytime. <a href="privacy.html">Privacy Policy</a></label>
+                </div>
+                             
+                <button class="btn create-button" type="submit">Create account</button>
+                
+                <div class="signup-login" >
+                    <p>Already have an account? <a href="log-in.html">Log in</a></p>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
